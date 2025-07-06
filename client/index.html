@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/icon" href="/scouterna.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    window.keycloak_url = "{{ keycloak_url }}";
+    window.keycloak_realm = "{{ keycloak_realm }}";
+    window.keycloak_client_id = "{{ keycloak_client_id }}";
+  </script>
+  <title>ScoutLens</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+uvicorn[standard]
+fastapi
+fastapi-pagination
+pydantic[email]
+pydantic_settings
+python-dotenv
+jinja2
+httpx
+python-jose
+async-lru

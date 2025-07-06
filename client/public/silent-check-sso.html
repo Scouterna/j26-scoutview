@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    // This script is used by Keycloak for silent token refreshing in an iframe.
+    // It should just post a message to the parent window with the full URL.
+    parent.postMessage(location.href, location.origin);
+  </script>
+</body>
+</html>

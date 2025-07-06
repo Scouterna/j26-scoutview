@@ -1,0 +1,21 @@
+# Git
+.git
+.gitignore
+
+# VSCode
+.vscode
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Python
+pyapp/.venv
+pyapp/__pycache__
+pyapp/.env
+pyapp/*.pyc
+
+# Node
+client/node_modules
+client/dist
+client/.env*
