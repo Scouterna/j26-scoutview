@@ -12,7 +12,7 @@ export default function ScoutGroupListItem({
   handleSelection,
 }) {
   return (
-    <ListItem key={ScoutGroup.id} disablePadding>
+    <ListItem disablePadding>
       <ListItemButton
         onClick={() => handleSelection("ScoutGroup", ScoutGroup.id)}
       >
