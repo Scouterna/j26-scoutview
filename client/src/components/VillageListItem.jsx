@@ -48,7 +48,14 @@ export default function VillageListItem({
               sx={{ p: 0.5 }}
             />
           </ListItemIcon>
-          <ListItemText primary={village.name} sx={{ fontWeight: "bold" }} />
+          <ListItemText
+            primary={village.name}
+            sx={{
+              fontWeight: "bold",
+              wordBreak: "break-word",
+              overflowWrap: "anywhere",
+            }}
+          />
           <IconButton edge="end">
             {isExpanded ? <ExpandLess /> : <ExpandMore />}
           </IconButton>

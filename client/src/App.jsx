@@ -9,16 +9,21 @@ export default function App() {
   const sidebarLogic = useScoutGroupSelector(testData);
 
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <CssBaseline />
       <main
         style={{
+          display: "flex",
+          flexDirection: "row",
           padding: "32px",
           width: "100%",
-          height: "calc(100vh - 64px)",
+          height: "100vh",
+          boxSizing: "border-box",
         }}
       >
-        <ScoutGroupSelector {...sidebarLogic} />
+        <div style={{ flex: "0 0 340px", marginRight: "32px", height: "100%" }}>
+          <ScoutGroupSelector {...sidebarLogic} />
+        </div>
       </main>
     </div>
   );

@@ -528,6 +528,19 @@
           "stats": []
         }
       ]
+    },
+    {
+      "name": "Testbyn12medettvåordträngtnamnhejmenvfdjknvsdvklamkvklfmvklfmvkdlsmvkldsmvklsdml",
+      "id": "testbyn12",
+      "num_participants": 56,
+      "ScoutGroups": [
+        {
+          "name": "Ekorren",
+          "id": "ekorren",
+          "num_participants": 20,
+          "stats": []
+        }
+      ]
     }
   ]
 }

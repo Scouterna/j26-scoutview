@@ -20,7 +20,8 @@ export default function ScoutGroupSelector({
         display: "flex",
         flexDirection: "column",
         borderRadius: "16px",
-        height: "100%",
+        height: "100%", // fill parent
+        minHeight: 0, // allow flex children to shrink
       }}
     >
       <div
@@ -48,7 +49,7 @@ export default function ScoutGroupSelector({
         setSearchTerm={setSearchTerm}
       />
 
-      <List sx={{ flexGrow: 1, overflowY: "auto", pr: 1 }}>
+      <List sx={{ flexGrow: 1, overflowY: "auto", pr: 1, minHeight: 0 }}>
         {filteredVillages.map((village) => {
           const ScoutGroupsInVillage = village.ScoutGroups.map((t) => t.id);
           const selectedInVillage = ScoutGroupsInVillage.filter((id) =>
