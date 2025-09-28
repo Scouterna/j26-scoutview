@@ -1,5 +1,5 @@
 import { CssBaseline } from "@mui/material";
-import useScoutGroupSelector from "./useScoutGroupSelector.js";
+import useScoutGroupSelector from "./hooks/useScoutGroupSelector.js";
 import testData from "../testdata/testdata.json";
 import ScoutGroupSelector from "./components/ScoutGroupSelector.jsx";
 
