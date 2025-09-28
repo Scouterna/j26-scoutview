@@ -28,12 +28,10 @@ export default function useScoutGroupSelector(jsonData) {
 
     // Handler for selecting/deselecting villages or ScoutGroups
     const handleSelection = (type, id) => {
-        console.log(type, id);
         setSelectedScoutGroupIds(prev => {
             const newSet = new Set(prev);
             if (type === 'village') {
                 const village = jsonData.villages.find(v => v.id === id);
-                console.log("BY VAL: " + JSON.stringify(village));
                 if (!village) return newSet;
                 const allScoutGroupInVillageSelected = village.ScoutGroups.every(t => newSet.has(t.id));
                 village.ScoutGroups.forEach(t => {
