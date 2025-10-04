@@ -9,7 +9,7 @@ export default function ScoutGroupSelector({
   searchTerm = "",
   setSearchTerm = () => {},
   handleSelection = () => {},
-  handleVillageToggle = () => {},
+  toggleVillageExpansion = () => {},
   clearSelection = () => {},
 }) {
   return (
@@ -69,7 +69,7 @@ export default function ScoutGroupSelector({
               isAllSelected={isAllSelected}
               isPartiallySelected={isPartiallySelected}
               isExpanded={isExpanded}
-              handleVillageToggle={handleVillageToggle}
+              toggleVillageExpansion={toggleVillageExpansion}
               handleSelection={handleSelection}
               selectedScoutGroupIds={selectedScoutGroupIds}
             />

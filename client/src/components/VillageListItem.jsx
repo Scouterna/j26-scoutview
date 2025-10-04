@@ -16,7 +16,7 @@ export default function VillageListItem({
   isAllSelected,
   isPartiallySelected,
   isExpanded,
-  handleVillageToggle,
+  toggleVillageExpansion,
   handleSelection,
   selectedScoutGroupIds,
 }) {
@@ -34,7 +34,7 @@ export default function VillageListItem({
         }}
       >
         <ListItemButton
-          onClick={() => handleVillageToggle(village.id)}
+          onClick={() => toggleVillageExpansion(village.id)}
           sx={{ borderRadius: "8px" }}
         >
           <ListItemIcon sx={{ minWidth: 32, mr: 0 }}>
